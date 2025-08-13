@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Media Encoder for macOS</title>
+    <meta name="theme-color" content="#7653c6" />
+    <meta name="description"
+        content="Simple, reliable audio and video conversion for macOS. MP3 input supported. No MP3 output. Presets for everyday formats." />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Simple Media Encoder" />
+    <meta property="og:description"
+        content="Simple, reliable audio and video conversion for macOS. MP3 input supported. No MP3 output." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/appIcon_simplemediaencoder.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="./assets/appIcon_simplemediaencoder.png" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img class="brand-icon" src="./assets/appIcon_simplemediaencoder.png" alt="Simple Media Encoder icon"
+                    width="32" height="32" />
+                <span class="brand-name">Simple Media Encoder</span>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#formats">Formats</a>
+                <a href="./readme.html">Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Simple audio and video conversion for macOS</h1>
+                    <p class="subtitle">Practical presets. Clean UI.</p>
+                    <div class="cta">
+                        <a class="btn btn-primary" href="../releases/">Download from Releases</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li>Built with AVAssetReader/AVAssetWriter</li>
+                        <li>Audio and video formats you actually use</li>
+                        <li>Swift 6 + SwiftUI, responsive and native</li>
+                    </ul>
+                </div>
+                <div class="hero-art">
+                    <img src="./assets/appIcon_simplemediaencoder.png" alt="App icon" class="hero-logo" />
+                </div>
+            </div>
+        </section>
+
+        <section id="formats" class="section">
+            <div class="container">
+                <h2>Supported formats</h2>
+                <div class="format-grid">
+                    <div class="format-card">
+                        <h3>Audio input</h3>
+                        <div class="chip-row">
+                            <span class="chip">WAV</span>
+                            <span class="chip">AIFF</span>
+                            <span class="chip">AAC/M4A</span>
+                            <span class="chip">ALAC/M4A</span>
+                            <span class="chip">MP3</span>
+                            <span class="chip">CAF</span>
+                        </div>
+                    </div>
+                    <div class="format-card">
+                        <h3>Video input</h3>
+                        <div class="label">Containers</div>
+                        <div class="chip-row">
+                            <span class="chip">MP4</span>
+                            <span class="chip">M4V</span>
+                            <span class="chip">MOV</span>
+                        </div>
+                        <div class="label">Codecs</div>
+                        <div class="chip-row">
+                            <span class="chip">H.264</span>
+                            <span class="chip">H.265/HEVC</span>
+                        </div>
+                    </div>
+                    <div class="format-card">
+                        <h3>Audio output</h3>
+                        <div class="chip-row">
+                            <span class="chip">WAV (PCM)</span>
+                            <span class="chip">AIFF (PCM)</span>
+                            <span class="chip">M4A (AAC/ALAC)</span>
+                        </div>
+                    </div>
+                    <div class="format-card">
+                        <h3>Video output</h3>
+                        <div class="label">Containers</div>
+                        <div class="chip-row">
+                            <span class="chip">MP4</span>
+                            <span class="chip">M4V</span>
+                            <span class="chip">MOV</span>
+                        </div>
+                        <div class="label">Codecs</div>
+                        <div class="chip-row">
+                            <span class="chip">H.264</span>
+                            <span class="chip">H.265/HEVC</span>
+                            <span class="chip">ProRes 422</span>
+                            <span class="chip">ProRes 4444</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2>What it does</h2>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <h3>Convert audio</h3>
+                        <p>Common inputs including MP3; outputs to uncompressed WAV/AIFF or M4A (AAC/ALAC).</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Convert video</h3>
+                        <p>MP4/M4V/MOV with H.264/H.265 or ProRes 422/4444 video, and AAC/ALAC/PCM audio via
+                            AVFoundation.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Batch friendly</h3>
+                        <p>Queue multiple files and let the app work in the background.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Native and efficient</h3>
+                        <p>Swift 6 + SwiftUI with AVAssetReader/AVAssetWriter under the hood.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Simple by design</h3>
+                        <p>Minimal controls for the most common jobs. No distractions.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Privacy</h3>
+                        <p>All processing is local on your Mac. No accounts, cloud, or telemetry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section muted">
+            <div class="container">
+                <h2>How it works</h2>
+                <ol class="steps">
+                    <li>Add one or more audio/video files.</li>
+                    <li>Choose the target format and destination.</li>
+                    <li>Click Convert. The engine runs with AVFoundation while the UI stays responsive.</li>
+                    <li>Open the converted files directly when done.</li>
+                </ol>
+                <div class="callout">Focused on reliable everyday conversions. Advanced workflows intentionally kept
+                    minimal.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Get started</h2>
+                <div class="get-started">
+                    <a class="btn btn-primary" href="../releases/">Download from Releases</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span>© <span id="year"></span> Simple Media Encoder</span>
+            </div>
+            <div class="footer-right">
+                <a href="../README.md">Project README</a>
+                <a href="./readme.html">Docs</a>
+                <a href="./usage.html">Usage</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
